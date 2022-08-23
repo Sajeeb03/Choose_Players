@@ -70,7 +70,7 @@
     height: 18rem;
     padding: 20px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .calculation {
@@ -105,4 +105,9 @@ footer {
     justify-content: center;
     margin-top: 20px;
     padding: 10px;
+}
+
+.money-color {
+    color: #FF5E19;
+    font-size: large;
 }

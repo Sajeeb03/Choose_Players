@@ -24,7 +24,7 @@
                 <div class="player-texts">
                     <h3>Cristiano Ronaldo</h3>
                     <p>Goals 62| Assist 43</p>
-                    <button id="btn-1" class="select-btn">Select</button>
+                    <button id="btn-1" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --2  -->
@@ -33,7 +33,7 @@
                 <div class="player-texts">
                     <h3>Neymar Jr</h3>
                     <p>Goals 42| Assist 23</p>
-                    <button id="btn-2" class="select-btn">Select</button>
+                    <button id="btn-2" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --3  -->
@@ -42,7 +42,7 @@
                 <div class="player-texts">
                     <h3>Karim Benzema</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-3" class="select-btn">Select</button>
+                    <button id="btn-3" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --4  -->
@@ -51,7 +51,7 @@
                 <div class="player-texts">
                     <h3>Kylian Embappe</h3>
                     <p>Goals 53| Assist 32</p>
-                    <button id="btn-4" class="select-btn">Select</button>
+                    <button id="btn-4" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --5  -->
@@ -60,7 +60,7 @@
                 <div class="player-texts">
                     <h3>Thibaut Courtois</h3>
                     <p>Saves 32| Cleansheets 43</p>
-                    <button id="btn-5" class="select-btn">Select</button>
+                    <button id="btn-5" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --6  -->
@@ -69,7 +69,7 @@
                 <div class="player-texts">
                     <h3>Lionel Messi</h3>
                     <p>Goals 62| Assist 83</p>
-                    <button id="btn-6" class="select-btn">Select</button>
+                    <button id="btn-6" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --7  -->
@@ -78,7 +78,7 @@
                 <div class="player-texts">
                     <h3>Rodrygo</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-7" class="select-btn">Select</button>
+                    <button id="btn-7" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --8  -->
@@ -87,7 +87,7 @@
                 <div class="player-texts">
                     <h3>Marcelo</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-8" class="select-btn">Select</button>
+                    <button id="btn-8" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --9  -->
@@ -96,7 +96,7 @@
                 <div class="player-texts">
                     <h3>Luka Modric</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-9" class="select-btn">Select</button>
+                    <button id="btn-9" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --10  -->
@@ -105,7 +105,7 @@
                 <div class="player-texts">
                     <h3>Vinicius Jr</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-10" class="select-btn">Select</button>
+                    <button id="btn-10" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --11  -->
@@ -114,7 +114,7 @@
                 <div class="player-texts">
                     <h3>Angel Di Maria</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-11" class="select-btn">Select</button>
+                    <button id="btn-11" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
             <!-- player --12  -->
@@ -123,7 +123,7 @@
                 <div class="player-texts">
                     <h3>Tony Croos</h3>
                     <p>Goals 32| Assist 43</p>
-                    <button id="btn-12" class="select-btn">Select</button>
+                    <button id="btn-12" class="select-btn" onclick="selectedFive(this)">Select</button>
                 </div>
             </div>
 
@@ -131,7 +131,10 @@
         </div>
         <div class="calculations">
             <div class="selected-list">
-                <h2>Selected Five</h2>
+                <h2 style="text-align: center;">Selected Five</h2>
+                <ol id="blank-list">
+
+                </ol>
             </div>
             <div class="calculation">
                 <h2>Budget</h2>
@@ -150,13 +153,15 @@
                     <input class="input-size" type="text">
                 </div>
                 <button class="select-btn">Calculate Total</button>
-                <p>Total Expenses $<span>0000</span></p>
+                <p>Total Expenses <span class="money-color">$</span><span class="money-color">0000</span></p>
             </div>
         </div>
     </main>
     <footer>
         <p><small>Copyright@ Muntasir_Rahman_2022</small></p>
     </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/selection.js"></script>
 </body>
 
 </html>
