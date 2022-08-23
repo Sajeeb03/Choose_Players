@@ -1,0 +1,108 @@
+.background {
+    background-color: #434343;
+}
+
+.container {
+    background-color: black;
+    height: 20rem;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    color: #FF5E19;
+}
+
+.maincontainer {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.players {
+    /* flex-grow: 1; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+
+.player-texts {
+    color: white;
+    text-align: center;
+}
+
+.select-btn {
+    background-color: #FF5E19;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.calculations {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.player {
+    background-color: black;
+    width: 100%;
+}
+
+.player img {
+    width: 100%;
+    height: 180px;
+}
+
+.selected-list {
+    background-color: black;
+    color: white;
+    height: 18rem;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.calculation {
+    background-color: black;
+    color: white;
+    height: 25rem;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.inputfields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-size {
+    height: 2em;
+    width: 8em;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: black;
+    height: 5em;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
