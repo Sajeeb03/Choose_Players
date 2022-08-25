@@ -14,6 +14,7 @@
     <header class="container">
         <h1>Choose Your Own Team</h1>
         <p>Choose the best players to create the best team in the world!</p>
+        <img src="images/ronaldo.png" alt="">
     </header>
 
     <main class="maincontainer">
@@ -140,20 +141,21 @@
                 <h2>Budget</h2>
                 <div class="inputfields">
                     <p>Per Player:</p>
-                    <input class="input-size" type="text">
+                    <input id="per-player-input" class="input-size" type="text">
                 </div>
-                <button class="select-btn">Calculate</button>
-                <p>Player Expenses $<span>0000</span></p>
+                <button id="calculate" class="select-btn">Calculate</button>
+                <p>Player Expenses $<span id="player-cost">0000</span></p>
                 <div class="inputfields">
                     <p>Manager:</p>
-                    <input class="input-size" type="text">
+                    <input id="manager-input" class="input-size" type="text">
                 </div>
                 <div class="inputfields">
                     <p>Coach:</p>
-                    <input class="input-size" type="text">
+                    <input id="coach-input" class="input-size" type="text">
                 </div>
-                <button class="select-btn">Calculate Total</button>
-                <p>Total Expenses <span class="money-color">$</span><span class="money-color">0000</span></p>
+                <button id="calculate-total" class="select-btn">Calculate Total</button>
+                <p>Total Expenses <span class="money-color">$</span><span id="total-expense"
+                        class="money-color">0000</span></p>
             </div>
         </div>
     </main>
@@ -162,6 +164,7 @@
     </footer>
     <script src="js/utilities.js"></script>
     <script src="js/selection.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 
 </html>

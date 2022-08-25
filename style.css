@@ -20,6 +20,11 @@
     color: #FF5E19;
 }
 
+.container img {
+    position: absolute;
+    margin-left: 25rem;
+}
+
 .maincontainer {
     width: 70%;
     display: flex;
